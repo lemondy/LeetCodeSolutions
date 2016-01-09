@@ -8,6 +8,7 @@ package cn.edu.bit.lemondy.leetcode.easy;
  */
 
 public class DecodeWays {
+	
 	public static int numDecoding(String s){
 		
 		return 0;
@@ -15,6 +16,7 @@ public class DecodeWays {
 	}
 	
 	public static void main(String[] args) {
+		
 		System.out.println(numDecoding("12"));
 	}
 

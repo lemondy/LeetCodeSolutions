@@ -3,7 +3,7 @@ package cn.edu.bit.lemondy.leetcode.easy;
 /**
  * 
  * @author lemon
- * 求 n!结果尾部有多少个0
+ * 求 n!结果尾部有多少个连续0
  */
 
 public class FactorialTrailingZeroes {

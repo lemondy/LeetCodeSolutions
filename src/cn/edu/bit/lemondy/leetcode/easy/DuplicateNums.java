@@ -13,29 +13,34 @@ import java.util.HashSet;
  */
 public class DuplicateNums {
 	public static boolean containsDuplicate(int[] nums) {
-//		 HashSet set = new HashSet();
-//	      for(Integer i:nums){
-//	          if(!set.add(i))   //如果元素不存在就返回true
-//	            return true;
-//	      }
-//	      return false;
-		 Arrays.sort(nums);
-		    final int len = nums.length;
-		    for (int i = 1; i <= len / 2; i++) {
-		        if (nums[i - 1] == nums[i] || nums[len - i] == nums[len - i - 1])
-		            return true;
-		    }
-		    return false;
+		//recommend solution: hashset 
+		 HashSet<Integer> set = new HashSet<Integer>();
+	      for(Integer i:nums){
+	          if(!set.add(i))   //如果元素不存在就返回true
+	            return true;
+	      }
+	      return false;
+	      
+	     //second solution, easy but not time efficient
+//		 Arrays.sort(nums);
+//		    final int len = nums.length;
+//		    for (int i = 1; i <= len / 2; i++) {
+//		        if (nums[i - 1] == nums[i] || nums[len - i] == nums[len - i - 1])
+//		            return true;
+//		    }
+//		    return false;
 	    }
 	public static void main(String[] args){
-		//System.out.println(1^2^3);
-		//System.out.println(1^2^3^4^5^1);
 		
 		int nums[] = new int[30000];
+		
 		for(int i=0;i<nums.length;i++)
 			nums[i]=i;
+		
 		long start=System.currentTimeMillis();
+		
 		System.out.println(containsDuplicate(nums));
+		
 		long end = System.currentTimeMillis();
 		System.out.println("time:"+(end-start));
 		

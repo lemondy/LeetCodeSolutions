@@ -1,5 +1,11 @@
 package cn.edu.bit.lemondy.leetcode.easy;
 
+/**
+ * 
+ * @author lemon
+ * сп╢Щ╦д╫Ь 
+ */
+
 public class MyAtoi {
 
 	 public static int myAtoi(String str) {
@@ -33,10 +39,7 @@ public class MyAtoi {
 			 double temp = Double.parseDouble(intString);
 			 result = (int)(Integer.MAX_VALUE-temp);
 			 return result;
-		 }
-		 
-		 
-		 
+		 }	 
 		 
 	 }
 	 
