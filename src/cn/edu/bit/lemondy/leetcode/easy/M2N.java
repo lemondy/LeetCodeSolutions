@@ -1,4 +1,4 @@
-package cn.edu.bit.lemondy.leetcode;
+package cn.edu.bit.lemondy.leetcode.easy;
  
 /**
  * 功能：将一个数从M进制转换成N进制

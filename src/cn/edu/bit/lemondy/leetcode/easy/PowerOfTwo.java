@@ -1,4 +1,4 @@
-package cn.edu.bit.lemondy.leetcode;
+package cn.edu.bit.lemondy.leetcode.easy;
 
 public class PowerOfTwo {
 	 public static boolean isPowerOfTwo(int n) {
