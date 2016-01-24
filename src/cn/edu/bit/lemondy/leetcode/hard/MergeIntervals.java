@@ -111,5 +111,4 @@ class Interval{
 		return "["+start+","+end+"]";
 	}
 	
-	
 }
